@@ -39,13 +39,6 @@ export const TerminalHeader = ({ command, description }: TerminalHeaderProps) =>
               {description}
             </motion.p>
           )}
-          
-          {/* Terminal prompt symbols */}
-          <div className="flex items-center space-x-2 mt-6">
-            <div className="w-3 h-3 rounded-full bg-red-500" />
-            <div className="w-3 h-3 rounded-full bg-yellow-500" />
-            <div className="w-3 h-3 rounded-full bg-primary-500" />
-          </div>
         </motion.div>
       </div>
     </div>

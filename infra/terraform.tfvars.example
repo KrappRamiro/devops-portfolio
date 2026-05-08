@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars (gitignored) and fill in.
+# Or set via env vars: TF_VAR_cloudflare_api_token, TF_VAR_cloudflare_account_id.
+
+cloudflare_api_token  = ""
+cloudflare_account_id = ""
+
+# Optional overrides (defaults usually fine):
+# cloudflare_domain     = "krapp.dev"
+# github_owner          = "KrappRamiro"
+# github_repo           = "devops-portfolio"
+# production_branch     = "main"
+# pages_project_name    = "portfolio"

@@ -230,7 +230,7 @@
 
 # Gatsby files
 **/.cache/
-**/public
+# (removed `**/public` — this Vite project ships static assets from /public/)
 
 # Vue.js
 **/dist/

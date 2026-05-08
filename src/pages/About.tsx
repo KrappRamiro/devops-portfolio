@@ -1,57 +1,77 @@
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Calendar, MapPin, Code, Zap } from 'lucide-react';
+import { Calendar, Code, Network, GraduationCap } from 'lucide-react';
 
 export const About = () => {
   const timeline = [
     {
-      year: '2023 - Present',
-      title: 'Freelance DevOps & Cloud Engineer',
-      company: 'Self-Employed',
+      year: 'May 2025 - Present',
+      title: 'Software Developer',
+      company: 'Mercado Libre',
       description:
-        'Working on freelance projects focusing on cloud automation, CI/CD, and container orchestration using AWS, Docker, and Kubernetes.',
-      icon: Code,},
-    {
-      year: '2019 - 2023',
-      title: 'Computer Science Graduate',
-      company: 'CVR College Of Engineering',
-      description: 'Bachelor\'s degree with focus on software engineering and cloud computing.',
-      icon: Calendar,
-    },
-  ];
-
-  const philosophyPoints = [
-    {
-      icon: Zap,
-      title: 'Automation First',
-      description: 'Every manual process should be automated, every deployment should be reproducible.',
+        'Fury Connectivity team. Multi-cloud network infrastructure across AWS and GCP. Maintaining VPCs, Transit Gateways, routing tables, and NAT gateways across regions. Provisioning with Terraform. Building internal networking tooling APIs in Go and Python.',
+      icon: Network,
     },
     {
+      year: 'Sep 2024 - Apr 2025',
+      title: 'Ssr DevOps Engineer',
+      company: 'GoCloud',
+      description:
+        'CI/CD pipelines with GitLab CI for Java, PHP/Laravel, NestJS, NextJS, and Vite + React projects. Dockerization and production deploys to Kubernetes and OpenShift. SonarQube setup for code quality. Infrastructure for internal testing environments on EC2 and K8s.',
       icon: Code,
-      title: 'Infrastructure as Code',
-      description: 'Treat infrastructure with the same discipline as application code.',
     },
     {
-      icon: MapPin,
-      title: 'Cloud Native',
-      description: 'Build for the cloud from day one, embrace containerization and orchestration.',
+      year: 'Jun 2023 - Sep 2024',
+      title: 'DevOps Engineer',
+      company: 'Provincia Seguros',
+      description:
+        'CI/CD with Azure DevOps and Jenkins for Java and Vue projects. Docker and Docker Compose containerization. Application deploys to Kubernetes. SonarQube quality gates. E2E testing with Cypress. Fullstack dev with Spring Boot, FastAPI, Flask. BPM demos with Camunda and Bonitasoft. Git training for trainees.',
+      icon: Code,
+    },
+    {
+      year: 'May 2023 - Sep 2023',
+      title: 'Software Developer',
+      company: 'Hello World SRL',
+      description:
+        'Website development with Flask and Bootstrap for the Nerdearla event, with GitHub Actions CI/CD for automated builds and deployments. Built a Raspberry Pi robot in Python that scanned attendee QR codes and generated personalized speeches via API.',
+      icon: Code,
+    },
+    {
+      year: 'Dec 2022 - Mar 2023',
+      title: 'Software Developer IoT',
+      company: 'Juegos Mentales',
+      description:
+        'Microcontroller programming in C++ on NodeMCU ESP8266 and ESP32. MQTT broker setup with Mosquitto for real-time communication. Web control system for managing escape room puzzles, lighting, sound, and participant progress.',
+      icon: Code,
+    },
+    {
+      year: 'Mar 2024 - Dec 2024',
+      title: 'Diplomatura en DevOps',
+      company: 'Mundos E',
+      description: 'DevOps program covering CI/CD, containers, cloud infrastructure, and automation practices.',
+      icon: GraduationCap,
+    },
+    {
+      year: '2016 - 2022',
+      title: 'Tecnicatura en Electrónica',
+      company: 'Instituto Tecnológico San Bonifacio',
+      description: 'Electronics technician program with a strong foundation in hardware, circuits, and embedded systems.',
+      icon: Calendar,
     },
   ];
 
   return (
     <div className="min-h-screen bg-bg-page">
-      {/* Terminal Header */}
       <TerminalHeader
         command="cat about.txt"
-        description="Displaying professional background and technical philosophy"
+        description="Displaying professional background"
       />
 
-      {/* Bio Section */}
+      {/* Bio */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 items-start">
-            {/* Bio Text */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -67,33 +87,38 @@ export const About = () => {
                 </div>
                 <div className="space-y-4 text-neutral-200 leading-relaxed">
                   <Typewriter
-                    text="Hello, I'm Neeraj Chandra Nakka, and I turn code into production reality."
+                    text="Hi, I'm Ramiro, DevOps Engineer based in Buenos Aires."
                     delay={30}
                     className="text-primary-500 font-semibold block mb-4"
                   />
                   <p>
-                    I design, automate, and deploy systems that turn code into production-grade reality. 
-                    My journey began with full-stack development—building web apps with Java, React, and Node.js.
+                    Im a normal guy, i like DevOps, Linux, and cooking for my girlfriend.
+                    Currently working at GoCloud.
                   </p>
                   <p>
-                    Over time, that foundation evolved into a passion for DevOps and Cloud Engineering, 
-                    where I now focus on crafting scalable infrastructure, clean CI/CD pipelines, and resilient deployments.
+                    Over 3+ years I've built CI/CD pipelines for Java, PHP, Node, and React projects, dockerized
+                    and deployed services to Kubernetes and OpenShift, and provisioned infrastructure with
+                    Terraform across AWS and GCP. I'm equally at home configuring Jenkins, GitLab CI,
+                    GitHub Actions, or Azure DevOps.
                   </p>
                   <p>
-                    I work across AWS and Azure, orchestrate containers with Docker and Kubernetes, 
-                    and define infrastructure with Terraform and automation scripts. Behind the command line, 
-                    I'm equally comfortable in version control and workflow automation, using Git, GitHub, 
-                    and GitLab CI/CD to bridge collaboration and delivery.
-                  </p>
+                    My background spans IoT (microcontrollers, MQTT, embedded C++), web (FastAPI,
+                    Flask, HTML/CSS/Javascript), and platform engineering                 </p>
                   <p className="text-primary-500 font-medium">
-                    For me, DevOps isn't just about speed—it's about precision, repeatability, 
-                    and creating systems that empower developers to ship confidently and innovate faster.
+                    For me, DevOps is about making thing easier and less of a headache, just like it's explained in{' '}
+                    <a
+                      href="https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-dotted underline-offset-2 hover:text-primary-300 transition-colors"
+                    >
+                      The DevOps Handbook
+                    </a>
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Quick Stats */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -108,19 +133,19 @@ export const About = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Experience</span>
-                    <span className="text-primary-500 font-mono">1+ years</span>
+                    <span className="text-primary-500 font-mono">3+ years</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Cloud Platforms</span>
-                    <span className="text-primary-500 font-mono">AWS, Azure</span>
+                    <span className="text-primary-500 font-mono">AWS · GCP</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-neutral-400">Projects</span>
-                    <span className="text-primary-500 font-mono">7+ deployed</span>
+                    <span className="text-neutral-400">Currently</span>
+                    <span className="text-primary-500 font-mono">@MercadoLibre</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-neutral-400">Technologies</span>
-                    <span className="text-primary-500 font-mono">19+ mastered</span>
+                    <span className="text-neutral-400">Based in</span>
+                    <span className="text-primary-500 font-mono">CABA, Argentina</span>
                   </div>
                 </div>
               </div>
@@ -130,7 +155,14 @@ export const About = () => {
                   Specializations
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Cloud Architecture', 'CI/CD Pipelines', 'Infrastructure as Code', 'Container Orchestration', 'Microservices'].map((skill) => (
+                  {[
+                    'Multi-Cloud Networking',
+                    'CI/CD Pipelines',
+                    'Infrastructure as Code',
+                    'Kubernetes',
+                    'Container Platforms',
+                    'Internal Tooling',
+                  ].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1 bg-neutral-800 text-neutral-200 text-sm rounded-md border border-neutral-700 hover:border-primary-500/50 transition-colors"
@@ -145,7 +177,7 @@ export const About = () => {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Timeline */}
       <section className="py-24 bg-bg-surface/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -159,41 +191,37 @@ export const About = () => {
               Career Timeline
             </h2>
             <p className="text-neutral-400 max-w-2xl mx-auto">
-              My journey from full-stack development to DevOps engineering
+              From IoT and embedded systems to multi-cloud platform engineering
             </p>
           </motion.div>
 
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 via-primary-700 to-transparent" />
 
             <div className="space-y-12">
               {timeline.map((item, index) => {
                 const IconComponent = item.icon;
                 const isEven = index % 2 === 0;
-                
+
                 return (
                   <motion.div
-                    key={item.year}
+                    key={`${item.year}-${item.title}`}
                     initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1, duration: 0.6 }}
                     viewport={{ once: true }}
-                    className={`relative flex items-center ${
-                      isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                    }`}
+                    className={`relative flex items-center ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                      }`}
                   >
-                    {/* Timeline dot */}
                     <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center border-4 border-bg-page shadow-glow z-10">
                       <IconComponent size={16} className="text-bg-surface" />
                     </div>
 
-                    {/* Content */}
                     <div className={`ml-16 md:ml-0 md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
                       <div className="bg-bg-elevated border border-neutral-700 rounded-lg p-6 hover:border-primary-500/50 transition-colors shadow-card">
                         <div className="font-mono text-accent-500 text-sm mb-2">{item.year}</div>
                         <h3 className="font-semibold text-xl text-neutral-200 mb-1">{item.title}</h3>
-                        <div className="text-primary-500 font-medium mb-3">{item.company}</div>
+                        <div className="text-primary-500 font-medium mb-3">@ {item.company}</div>
                         <p className="text-neutral-400 text-sm leading-relaxed">{item.description}</p>
                       </div>
                     </div>
@@ -205,47 +233,6 @@ export const About = () => {
         </div>
       </section>
 
-      {/* Philosophy Section */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-mono text-3xl md:text-4xl font-bold text-primary-500 mb-4">
-              Tech Philosophy
-            </h2>
-            <p className="text-neutral-400 max-w-2xl mx-auto">
-              Core principles that guide my approach to software engineering and DevOps
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {philosophyPoints.map((point, index) => {
-              const IconComponent = point.icon;
-              return (
-                <motion.div
-                  key={point.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.6 }}
-                  viewport={{ once: true }}
-                  className="bg-bg-elevated border border-neutral-700 rounded-xl p-8 text-center hover:border-primary-500/50 transition-all duration-300 group"
-                >
-                  <div className="w-16 h-16 bg-primary-500/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-500/20 transition-colors">
-                    <IconComponent size={32} className="text-primary-500" />
-                  </div>
-                  <h3 className="font-semibold text-xl text-neutral-200 mb-4">{point.title}</h3>
-                  <p className="text-neutral-400 leading-relaxed">{point.description}</p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
