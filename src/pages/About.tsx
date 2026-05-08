@@ -6,7 +6,7 @@ import { Calendar, Code, Network, GraduationCap } from 'lucide-react';
 export const About = () => {
   const timeline = [
     {
-      year: 'May 2025 - Present',
+      year: 'May 2025 - May 2026',
       title: 'Software Developer',
       company: 'Mercado Libre',
       description:
@@ -92,14 +92,16 @@ export const About = () => {
                     className="text-primary-500 font-semibold block mb-4"
                   />
                   <p>
-                    Im a normal guy, i like DevOps, Linux, and cooking for my girlfriend.
-                    Currently working at GoCloud.
+                    Im a normal guy, I like DevOps, Linux, and spending more time that I should configuring Neovim.
                   </p>
                   <p>
                     Over 3+ years I've built CI/CD pipelines for Java, PHP, Node, and React projects, dockerized
                     and deployed services to Kubernetes and OpenShift, and provisioned infrastructure with
                     Terraform across AWS and GCP. I'm equally at home configuring Jenkins, GitLab CI,
                     GitHub Actions, or Azure DevOps.
+                  </p>
+                  <p>
+                    I always forget to water my plants :(
                   </p>
                   <p>
                     My background spans IoT (microcontrollers, MQTT, embedded C++), web (FastAPI,
@@ -156,7 +158,7 @@ export const About = () => {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Multi-Cloud Networking',
+                    'Networking',
                     'CI/CD Pipelines',
                     'Infrastructure as Code',
                     'Kubernetes',

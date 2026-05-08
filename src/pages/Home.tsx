@@ -187,7 +187,7 @@ export const Home = () => {
               </p>
               <p>
                 <span className="text-primary-500 mr-2">&gt;</span>
-                Currently at <span className="text-primary-500">@MercadoLibre</span> on the Fury Connectivity team, working on multi-cloud networking across AWS and GCP.
+                Currently working at <span className="text-primary-500">@GoCloud</span>.
               </p>
               <p>
                 <span className="text-primary-500 mr-2">&gt;</span>
