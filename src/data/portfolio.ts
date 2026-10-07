@@ -1,6 +1,6 @@
 export const HERO_CONTENT = "Hi! Im Ramiro Krapp. You may find information about me in this webpage. I mainly do DevOps.";
 
-export const ABOUT_TEXT = "DevOps Engineer with 3+ years of experience building CI/CD pipelines, orchestrating containers with Kubernetes, and provisioning cloud infrastructure on AWS and GCP. Currently working at GoCloud. Background in software development spanning IoT, web, and backend systems. Comfortable across Python, Rust and Javascript";
+export const ABOUT_TEXT = "DevOps Engineer with 4+ years of experience building CI/CD pipelines, orchestrating containers with Kubernetes, and provisioning cloud infrastructure on AWS and GCP. Currently at GoCloud, providing DevOps services across multiple clients. Background in software development spanning IoT, web, and backend systems. Comfortable across Python, Rust and Javascript";
 
 export const SKILLS = [
   // Cloud

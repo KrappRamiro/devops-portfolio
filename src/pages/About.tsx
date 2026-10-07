@@ -1,10 +1,18 @@
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Calendar, Code, Network, GraduationCap } from 'lucide-react';
+import { Calendar, Cloud, Code, ExternalLink, Network, GraduationCap } from 'lucide-react';
 
 export const About = () => {
   const timeline = [
+    {
+      year: 'May 2026 - Present',
+      title: 'DevOps Engineer',
+      company: 'GoCloud',
+      description:
+        'DevOps services for multiple clients. AWS cloud environment setup, Amazon Aurora Global Databases, and multi-region disaster recovery plans. DNS configuration with Route 53. CI/CD pipelines with GitLab CI. Agentic workloads for migrating repositories to multi-region setups.',
+      icon: Cloud,
+    },
     {
       year: 'May 2025 - May 2026',
       title: 'Software Developer',
@@ -95,7 +103,7 @@ export const About = () => {
                     Im a normal guy, I like DevOps, Linux, and spending more time that I should configuring Neovim.
                   </p>
                   <p>
-                    Over 3+ years I've built CI/CD pipelines for Java, PHP, Node, and React projects, dockerized
+                    Over 4+ years I've built CI/CD pipelines for Java, PHP, Node, and React projects, dockerized
                     and deployed services to Kubernetes and OpenShift, and provisioned infrastructure with
                     Terraform across AWS and GCP. I'm equally at home configuring Jenkins, GitLab CI,
                     GitHub Actions, or Azure DevOps.
@@ -135,7 +143,7 @@ export const About = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Experience</span>
-                    <span className="text-primary-500 font-mono">3+ years</span>
+                    <span className="text-primary-500 font-mono">4+ years</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Cloud Platforms</span>
@@ -143,7 +151,7 @@ export const About = () => {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Currently</span>
-                    <span className="text-primary-500 font-mono">@MercadoLibre</span>
+                    <span className="text-primary-500 font-mono">@GoCloud</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Based in</span>
@@ -172,6 +180,27 @@ export const About = () => {
                       {skill}
                     </span>
                   ))}
+                </div>
+              </div>
+
+              <div className="bg-bg-elevated border border-neutral-700 rounded-xl p-6">
+                <h3 className="font-mono text-primary-500 font-semibold mb-4 text-lg">
+                  Certifications
+                </h3>
+                <div className="space-y-1">
+                  <a
+                    href="https://www.credly.com/badges/8a4d6116-08ab-4157-9949-487ea63bc98d/public_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-neutral-200 font-semibold hover:text-primary-500 transition-colors"
+                  >
+                    AWS Certified Cloud Practitioner
+                    <ExternalLink size={14} />
+                  </a>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-neutral-400">Amazon Web Services</span>
+                    <span className="text-accent-500 font-mono">Jul 2026 - Jul 2029</span>
+                  </div>
                 </div>
               </div>
             </motion.div>

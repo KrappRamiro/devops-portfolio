@@ -173,7 +173,7 @@ export const Projects = () => {
               More on GitHub
             </h2>
             <p className="text-xl text-neutral-200 mb-8 leading-relaxed">
-              Most of my work lives in private repos at MercadoLibre and previous employers.
+              Most of my work lives in private repos at GoCloud, MercadoLibre, and previous employers.
               Personal experiments, dotfiles, and side projects are on GitHub.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

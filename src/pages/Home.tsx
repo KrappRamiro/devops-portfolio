@@ -191,7 +191,7 @@ export const Home = () => {
               </p>
               <p>
                 <span className="text-primary-500 mr-2">&gt;</span>
-                3+ years building CI/CD pipelines, Kubernetes platforms, and cloud infrastructure that scales.
+                4+ years building CI/CD pipelines, Kubernetes platforms, and cloud infrastructure that scales.
               </p>
             </div>
             <div className="mt-8 pt-6 border-t border-neutral-700 flex justify-center">
